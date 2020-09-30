@@ -8,8 +8,8 @@ import os
 
 
 def resource_path(relative_path):
-    if hasattr(sys, '_MEIPASS'):
-        return os.path.join(sys._MEIPASS, relative_path)
+    if hasattr(sys, '_PASS'):
+        return os.path.join(sys._PASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
 
 
@@ -32,7 +32,7 @@ def getData(url):
 
 if __name__ == "__main__":
     while True:
-       # notifyTangi("Tangi", "Virus ki ma behen ek kar de !!")
+       # notifyTangi("Tangi", "Virus fucker !!")
         myHtmlData = getData('https://www.mohfw.gov.in/')
 
         soup = BeautifulSoup(myHtmlData, 'html.parser')
@@ -53,4 +53,4 @@ if __name__ == "__main__":
                 notifyTangi(nTitle, nText)
                 time.sleep(2)
 
-        time.sleep(1800)
+        time.sleep(1000)
