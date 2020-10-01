@@ -16,10 +16,10 @@ def resource_path(relative_path):
 resource_path('icon.ico')
 
 
-def notifyTangi(title, message):
+def notifyTangi(title,covid positive):
     notification.notify(
         title=title,
-        message=message,
+        covid positive=covid positive,
         app_icon="E:\covidnotify\icon.ico",
         timeout=8
     )
@@ -44,7 +44,7 @@ if __name__ == "__main__":
         itemList = myDataStr.split("\n\n")
 
         states = ['Kerala', 'Maharashtra', 'Karnataka', 'Delhi', 'West Bengal']
-        for item in itemList[0:23]:
+        for item in itemList[0:30]:
             dataList = item.split("\n")
             if dataList[1] in states:
                 print(dataList)
